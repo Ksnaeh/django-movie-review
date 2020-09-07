@@ -1,0 +1,23 @@
+<nav id="para" class="navbar navbar-expand-sm bg-light navbar-dark">
+  <div class="container-fluid">
+    <div class="navbar-header" style="margin-left: 4%">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse1" 
+      style="margin-top: -15px; padding-top: 10px; margin-bottom: -5px">
+        <ul class="nav navbar-nav">
+          <li style="padding-left: 10px; padding-right: 10px; background-color: black; color: #f1f1f1"><p style="margin-top:7px; margin-bottom: -5px; font-weight: bold">Movie Review</p></li>
+          <li><a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li id="hideLogin"><a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
+          <li id="hideSignUp"><a class="nav-link" routerLink="/signup" routerLinkActive="active">Sign up</a></li>
+          <li id="hideLogout"><a class="nav-link" routerLink="/logout" routerLinkActive="active">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="parallax">
+  <div class="container">
+      <div style="padding-top: 30px"></div>
+<router-outlet></router-outlet>
+</div>
+</div>
+

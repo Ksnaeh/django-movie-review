@@ -1,0 +1,20 @@
+
+<div class="login">
+    <h2 style="color: black; padding-top: 20px">
+      Login page
+    </h2>
+    <br/>
+    <br/> 
+      <p><b>Username:</b></p>
+      <p><input id="username" [(ngModel)]="auth.userName" placeholder="enter username"></p>
+    <br/>
+      <p><b>Password:</b></p>
+      <p><input id="password" [(ngModel)]="auth.passWord" placeholder="enter password"></p>
+    <br/>
+    <br/>
+      <button class="btn btn-primary" style="width: 140px" (click)="signInFunction();">Login</button>
+    <br/>
+    <br/>
+      <p><button class="btn btn-primary"  routerLink="/signup" routerLinkActive="active">Register here!</button></p>
+    <br/>
+</div>

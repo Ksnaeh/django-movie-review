@@ -1,0 +1,20 @@
+
+<!-- Comment: <input type="text" [(ngModel)]="comments.comment"/><br>
+<p>Userrname: {{userna}}</p><br/>
+<button (click)="addComment();">Add Comment!</button> -->
+
+<div class="commentcon">
+    <h2 style="text-align: center; margin: auto; padding-top: 10px">Add Comment</h2>
+    <button class="btn btn-primary" [routerLink]="['/home']" style="float: left; margin-left: 20px; margin-top: -37px">Back</button>
+    <br/>
+  <div class="card" id="formcardsettings">
+        <p>
+            <textarea rows="4" cols="73" [(ngModel)]="comments.comment" id="quote" placeholder="insert comment here"></textarea>
+        </p>
+        <div style="margin-bottom: 20px">
+            <button class="btn btn-primary" (click)="addComment();">Add comment</button>
+        </div>
+     </div>
+     <br/>
+     <br/>
+</div>

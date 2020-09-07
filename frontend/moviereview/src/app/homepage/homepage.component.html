@@ -1,0 +1,32 @@
+
+<div class="row" *ngFor="let movie of movies">
+  <div class="col-sm-9">
+    <div class="card" style="width: 120%; margin-left: 7%; margin-bottom: 20px">
+      <div class="card-header">  
+        <h4>{{ movie.movieName }}</h4>     
+      </div>
+      <div class="card-body">
+        <div class="col-sm-2">
+          <img src="{{movie.movieImg}}" height="200px" width="120px">
+          </div>
+      <table style="margin-left: 10%; width: 0 auto;">
+          <tr>
+              <td style="width: 5%;"><p>Genre: </p></td>
+              <td class="secondtbrow"><p style="margin-left: 2%">{{movie.movieGenre}}</p></td>
+            </tr>
+        <tr>
+          <td style="width: 5%;"><p>Rating: </p></td>
+          <td class="secondtbrow"><p style="margin-left: 2%">{{movie.movieRating}}</p></td>
+        </tr>
+        <tr>
+          <td style="width: 5%;"><p>Description: </p></td>
+          <td class="secondtbrow"><p style="margin-left: 2%">{{movie.movieDesc}}</p></td>
+        </tr>
+      </table>
+      <div style="margin-top: 2%;"></div>
+      <button class="btn btn-primary" [routerLink]="['/comments', movie.movieName]" routerLinkActive="active">View Comments</button>
+      <br/>
+      </div>
+    </div>
+  </div>
+</div>

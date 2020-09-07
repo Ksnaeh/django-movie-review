@@ -1,0 +1,31 @@
+
+<div style="margin: auto; width: 70%;">
+    <div style="width: 100%; margin-bottom: 20px; background-color: rgba(255, 255, 255, 0.719); border-radius: 5px; padding-top: 5px; padding-bottom:5px">
+      <h2 style="text-align: center; margin: auto; padding-top: 10px">List of comments for {{moviename}}</h2>
+      <br/>
+      <button  *ngIf="getusername != null" style="margin-left: 20px" [routerLink]="['/addcomment', moviename]">Add comment</button>
+    </div>
+    <p *ngIf = "commentArray == null"> There are no comments, be the first add a comment now!</p>
+    <div class="row" *ngFor="let post of commentArray" id="commentboxes">
+      <div class="card" style=" width: 100%; margin-bottom: 20px">
+        <p class="card-header" style="font-size: 18px;">{{post.userName}}</p>
+        <table style="margin-right: 20px; margin-bottom: 20px; margin-left: 20px; margin-top: 10px; font-size: 14px">
+          <tr>
+            <td style="width: 120px"><p class="card-text" style="color: rgb(58, 58, 58)"><i>ID: </i></p></td>
+            <td><p class="card-text" style="color: rgb(58, 58, 58)"><i>{{post.commentID}}</i></p></td>
+          </tr>
+          <br/>
+          <tr>
+            <td style="vertical-align: top">User comment:</td>
+            <td>{{post.comment}}</td>
+          </tr>
+        </table>
+        <div class="col-sm-6">
+          <button  class="btn btn-success" *ngIf="getusername == post.userName" [routerLink]="['/editcomment', post.commentID]">edit comment</button>
+          <button  class="btn btn-danger" *ngIf="getusername == post.userName" (click)="deleteCommentar(post.commentID);">delete comment</button>
+        </div>
+        <br>
+      </div>
+
+  </div>
+</div>

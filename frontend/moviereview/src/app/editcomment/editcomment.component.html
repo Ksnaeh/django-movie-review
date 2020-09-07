@@ -1,0 +1,26 @@
+<!-- <p>editcomment works!</p>
+
+<h1> Edit comment</h1>
+<p>Movie name: {{dbmoviename}}</p>
+<p>User name: {{dbuser}}</p>
+<p>comment id: {{dbid}}</p>
+Comment: <input [(ngModel)]="this.editedComment.comment" value="{{comment}}">
+<br>
+<p><button (click)="addEditToDb();">Make Edits</button></p>
+<p><button [routerLink]="['/home']">Back</button></p> -->
+
+<div class="commentcon">
+    <h2 style="text-align: center; margin: auto; padding-top: 10px">Edit Comment</h2>
+    <button class="btn btn-primary" [routerLink]="['/home']" style="float: left; margin-left: 20px; margin-top: -37px">Back</button>
+    <br/>
+  <div class="card" id="formcardsettings">
+        <p>
+            <textarea rows="4" cols="73" [(ngModel)]="this.editedComment.comment" id="quote" value="{{comment}}"></textarea>
+        </p>
+        <div style="margin-bottom: 20px">
+            <button class="btn btn-primary" (click)="addEditToDb();">Add comment</button>
+        </div>
+     </div>
+     <br/>
+     <br/>
+</div>

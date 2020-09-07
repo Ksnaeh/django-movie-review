@@ -1,0 +1,32 @@
+<!-- <h1>Register Page</h1>
+<input [(ngModel)]="this.newuserform.userName" placeholder="enter a username">
+<br>
+<input [(ngModel)]="this.newuserform.passWord" placeholder="enter a password">
+<br>
+<input [(ngModel)]="this.newuserform.checkPass" placeholder="enter password again">
+<br>
+<p><button (click)="registerUser();">Sign up!</button></p> -->
+
+
+<div class="login">
+    <h2 style="color: black; padding-top: 20px">
+       Registration Page
+    </h2>
+
+    <br/>
+    <br/>
+  
+    <p><b>Enter a username:</b></p>
+    <p><input [(ngModel)]="this.newuserform.userName" placeholder="enter a username"></p>
+    <br/>
+    <p><b>Enter a password:</b></p>
+    <p><input [(ngModel)]="this.newuserform.passWord" placeholder="enter a password"><br>
+    <i style="font-size: 12px; color: #5e5e5e;">* min of 8 characters is needed!</i></p>
+    <br/>
+    <p><b>Enter password again:</b></p>
+    <p><input [(ngModel)]="this.newuserform.checkPass" placeholder="enter password again"></p>
+    <br/>
+    <br/>
+    <p><button class="btn btn-primary" type="submit" (click)="registerUser();">Register</button></p>
+  
+</div>
