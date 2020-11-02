@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "bfc35a29-9198-49b7-af27-3a8c342ac905",
+		"name": "Movie Review",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adding movies to backend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"movieName\": \"John Wick 3: Parabellum\",\r\n        \"movieDesc\": \"a new action movie that is revolved on the life of the assassin-hitman John Wick\",\r\n        \"movieRating\": 99,\r\n        \"movieGenre\": \"action\",\r\n        \"movieImg\": \"https://upload.wikimedia.org/wikipedia/en/thumb/9/94/John_Wick_Chapter_3_Parabellum.png/220px-John_Wick_Chapter_3_Parabellum.png\"\r\n    },\r\n    {\r\n        \"movieName\": \"Resident Evil: Vendetta\",\r\n        \"movieDesc\": \"A 2017 animated movie that is made by Capcom and the developers of Resident Evil game franchise, this movie revolves on a new bioterror attack on new york city\",\r\n        \"movieRating\": 90,\r\n        \"movieGenre\": \"action\",\r\n        \"movieImg\": \"https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Biohazard_vendetta_poster.jpg/220px-Biohazard_vendetta_poster.jpg\"\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						""
+					]
+				},
+				"description": "Get Movies"
+			},
+			"response": []
+		},
+		{
+			"name": "Adding comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"comment\": \"A highly recommended movie to watch if you're a Keanu fan\",\r\n        \"commentUser\": \"MichaelToh\",\r\n        \"commentMovie\": \"John Wick 3: Parabellum\"\r\n    },\r\n    {\r\n        \"comment\": \"Funny movie with a lot of dark humour, it may seem like the movie is trash but it isn't\",\r\n        \"commentUser\": \"stonks\",\r\n        \"commentMovie\": \"Resident Evil: Vendetta\"\r\n    },\r\n    {\r\n        \"comment\": \"i love this movie\",\r\n        \"commentUser\": \"hean\",\r\n        \"commentMovie\": \"John Wick 3: Parabellum\"\r\n    },\r\n    {\r\n        \"comment\": \"idk about this movie\",\r\n        \"commentUser\": \"stonks\",\r\n        \"commentMovie\": \"John Wick 3: Parabellum\"\r\n    },\r\n    {\r\n        \"comment\": \"i love the east coast plan\",\r\n        \"commentUser\": \"stonks\",\r\n        \"commentMovie\": \"John Wick 3: Parabellum\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"userName\": \"stonks\",\r\n        \"userPassword\": \"password\"\r\n    },\r\n    {\r\n        \"userName\": \"MichaelToh\",\r\n        \"userPassword\": \"stonks\"\r\n    },\r\n    {\r\n        \"userName\": \"hean\",\r\n        \"userPassword\": \"newpassword\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(use this after adding) Get movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
