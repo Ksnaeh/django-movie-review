@@ -1,0 +1,48 @@
+Prerequisites:
+-you'll need to have python installed
+-you'll need to have node.js installed (so that you can run the frontend)
+-you'll also need to have postman installed (add stuff in to the python database)
+
+links to download:
+python: https://docs.python.org/3/using/windows.html
+node.js/npm: https://nodejs.org/en/
+postman*: https://www.postman.com/downloads/
+
+*both web and desktop versions work equally
+
+
+
+
+TO RUN PYTHON BACKEND:
+1) ensure you have python installed, open a cmd prompt and hit 'python --version' and enter
+2) if it's installed, great. If it isn't, please check if it's properly installed before moving to the next step
+3) cd (a command for "change directory") into '[blabla]\django-movie-review\backend'
+4) enter 'pipenv shell', it will launch python's virtual environment
+5) enter the following cmd below:
+-'pip install django djangorestframework django-cors-headers'
+6) once successfully installed, cd into 'moviemanager'
+7) enter the cmd 'python manage.py runserver' to launch the python backend
+8) If there isn't any errors, congrats! We shall move to the next section
+
+
+
+TO IMPORT DATA:
+reference- https://learning.postman.com/docs/getting-started/importing-and-exporting-data/
+
+note: you need the python backend to be active at all times
+1) using postman, import the collection from 'postman data'
+2) follow the requests by order (the post requests)
+3) should there be no errors, use the get requests to test if the data has been successfully added
+4) now we have imported all the data, we shall start to get the website up and running on
+
+
+TO RUN THE ANGULAR FRONTEND:
+1) please make sure you have node.js and npm is installed, you can do this by typing 'npm -v' into the cmd, it should show the version. (if there isn't anything, check if node.js has installed correctly)
+Also, I recommend you to open another cmd prompt to keep the python backend running
+2) cd to '[blabla]/frontend/moviereview'
+3) enter 'ng serve' to run the frontend
+4) hit on chrome and enter the localhost link stated in the ng serve cmd and enjoy!
+
+
+
+If there's anything worth asking, please pm me on discord, I'll try my best to reply asap (it won't be immediate, sadly)
