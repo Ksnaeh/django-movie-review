@@ -40,8 +40,10 @@ TO RUN THE ANGULAR FRONTEND:
 1) please make sure you have node.js and npm is installed, you can do this by typing 'npm -v' into the cmd, it should show the version. (if there isn't anything, check if node.js has installed correctly)
 Also, I recommend you to open another cmd prompt to keep the python backend running
 2) cd to '[blabla]/frontend/moviereview'
-3) enter 'ng serve' to run the frontend
-4) hit on chrome and enter the localhost link stated in the ng serve cmd and enjoy!
+3) run 'npm install' to install the necessary dependencies to kickstart the frontend
+4) enter 'ng serve' to run the frontend'
+5) in the event that you receive a '@angular/http' message, run 'npm install @angular/http --legacy-peer-deps'
+6) hit on chrome and enter the localhost link stated in the ng serve cmd and enjoy!
 
 
 

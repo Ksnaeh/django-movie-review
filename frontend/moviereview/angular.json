@@ -121,5 +121,8 @@
         }
       }
     }},
-  "defaultProject": "moviereview"
+  "defaultProject": "moviereview",
+  "cli": {
+    "analytics": false
+  }
 }
